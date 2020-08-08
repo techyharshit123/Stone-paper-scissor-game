@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', s```ans-serif;
+  }
+  .container{
+        height: 100vh;
+        background-color: #b1bec3;
+        position: relative;
+  }
+  .scoreCard{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    font-size: 10px;
+  }
+  .scoreCard div{
+    display: flex;
+    background-color: rgba(58, 227, 116,0.8);
+    box-shadow: 4px 4px 80px 4px #4b4b4b;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+     padding: 20px;
+  }
+  .scoreCard div p{
+    font-size: 30px;
+
+  }
+  .startInfo{
+     width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+        transition: opacity 0.5s ease;
+
+  }
+  .startInfo h1{
+    font-family: 'Baloo Bhai 1', cursive;
+    font-size: 40px
+  }
+  button{
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    background-color:  #833471;
+    border: none;
+    color: #f1f1f6;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: #6F1E51;
+  }
+  .gameArea{
+     width: 70%;
+    height: 400px;
+    margin-top: 80px;
+    background-color: #ffcccc;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    box-shadow: 4px 4px 80px 4px #4b4b4b;
+  }
+  .gameArea h1{
+    font-family: 'Baloo Bhai 1', cursive;
+    font-size: 40px
+  }
+  .playerHand{
+    transform: rotateY(180deg);
+  }
+  .fadeOut{
+    opacity: 0;
+    pointer-events: none
+  }
+  .fadeIn{
+    opacity: 1;
+     pointer-events: all;
+  }
+  @keyframes shakePlayer {
+  0% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  15% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  15% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  35% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  50% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  65% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  75% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  85% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  100% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+}
+  @keyframes shakeComputer {
+  0% {
+    transform: translateY(0px);
+  }
+  15% {
+    transform: translateY(-50px);
+  }
+  15% {
+    transform: translateY(0px);
+  }
+  35% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  65% {
+    transform: translateY(-50px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  85% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
